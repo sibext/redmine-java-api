@@ -25,7 +25,7 @@ public class NaiveSSLFactory {
         SSLContext sslcontext = null;
         try {
             TrustManager[] managers = new TrustManager[] { manager };
-            sslcontext = SSLContext.getInstance("SSL");
+            sslcontext = SSLContext.getInstance("TLS");
             sslcontext.init(null, managers, null);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
