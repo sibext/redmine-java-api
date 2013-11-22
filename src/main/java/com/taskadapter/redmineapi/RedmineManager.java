@@ -32,8 +32,8 @@ import java.util.Map.Entry;
 
 import com.taskadapter.redmineapi.internal.CopyBytesHandler;
 import com.taskadapter.redmineapi.internal.Joiner;
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
+import ch.boye.httpclientandroidlib.NameValuePair;
+import ch.boye.httpclientandroidlib.message.BasicNameValuePair;
 
 import com.taskadapter.redmineapi.bean.Attachment;
 import com.taskadapter.redmineapi.bean.Group;

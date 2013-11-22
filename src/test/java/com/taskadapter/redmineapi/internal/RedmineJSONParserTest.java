@@ -14,6 +14,8 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import com.sibext.json.JSONException;
 import com.taskadapter.redmineapi.DateComparator;
 import com.taskadapter.redmineapi.MyIOUtils;
 import com.taskadapter.redmineapi.RedmineTestUtils;
@@ -26,8 +28,6 @@ import com.taskadapter.redmineapi.bean.TimeEntryActivity;
 import com.taskadapter.redmineapi.bean.Tracker;
 import com.taskadapter.redmineapi.bean.User;
 import com.taskadapter.redmineapi.internal.json.JsonInput;
-
-import org.json.JSONException;
 
 /**
  * Redmine JSON parser tests.

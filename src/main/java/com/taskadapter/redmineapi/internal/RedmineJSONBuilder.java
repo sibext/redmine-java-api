@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.sibext.json.JSONException;
+import com.sibext.json.JSONWriter;
 import com.taskadapter.redmineapi.RedmineInternalError;
 import com.taskadapter.redmineapi.bean.Attachment;
 import com.taskadapter.redmineapi.bean.CustomField;
@@ -22,9 +24,6 @@ import com.taskadapter.redmineapi.bean.User;
 import com.taskadapter.redmineapi.bean.Version;
 import com.taskadapter.redmineapi.internal.json.JsonObjectWriter;
 import com.taskadapter.redmineapi.internal.json.JsonOutput;
-
-import org.json.JSONWriter;
-import org.json.JSONException;
 
 /**
  * Builder for requests to Redmine in JSON format.

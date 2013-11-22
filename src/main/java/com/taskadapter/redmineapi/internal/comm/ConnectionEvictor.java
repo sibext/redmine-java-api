@@ -2,7 +2,7 @@ package com.taskadapter.redmineapi.internal.comm;
 
 import java.util.concurrent.TimeUnit;
 
-import org.apache.http.conn.ClientConnectionManager;
+import ch.boye.httpclientandroidlib.conn.ClientConnectionManager;
 
 /**
  * Connection evictor.

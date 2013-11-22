@@ -2,9 +2,10 @@ package com.taskadapter.redmineapi.internal;
 
 import junit.framework.Assert;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.junit.Test;
+
+import com.sibext.json.JSONException;
+import com.sibext.json.JSONObject;
 import com.taskadapter.redmineapi.bean.Issue;
 import com.taskadapter.redmineapi.bean.IssueRelation;
 import com.taskadapter.redmineapi.bean.Project;

@@ -2,13 +2,14 @@ package com.taskadapter.redmineapi;
 
 import java.util.List;
 
-import org.json.JSONObject;
 import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.sibext.json.JSONObject;
 import com.taskadapter.redmineapi.bean.Project;
 import com.taskadapter.redmineapi.internal.RedmineJSONParser;
 import com.taskadapter.redmineapi.internal.json.JsonInput;
-import org.junit.Before;
-import org.junit.Test;
 
 public class ProjectsTest {
 

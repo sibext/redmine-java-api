@@ -6,7 +6,7 @@ import java.io.Reader;
 import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
 
-import org.apache.http.HttpResponse;
+import ch.boye.httpclientandroidlib.HttpResponse;
 
 import com.taskadapter.redmineapi.RedmineException;
 import com.taskadapter.redmineapi.RedmineTransportException;

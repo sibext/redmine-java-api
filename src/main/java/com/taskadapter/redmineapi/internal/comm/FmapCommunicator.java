@@ -1,6 +1,6 @@
 package com.taskadapter.redmineapi.internal.comm;
 
-import org.apache.http.HttpRequest;
+import ch.boye.httpclientandroidlib.HttpRequest;
 import com.taskadapter.redmineapi.RedmineException;
 
 /**

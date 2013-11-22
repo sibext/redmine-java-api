@@ -7,7 +7,7 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-import org.apache.http.conn.ssl.SSLSocketFactory;
+import ch.boye.httpclientandroidlib.conn.ssl.SSLSocketFactory;
 
 
 /**
@@ -25,7 +25,7 @@ public class NaiveSSLFactory {
         SSLContext sslcontext = null;
         try {
             TrustManager[] managers = new TrustManager[] { manager };
-            sslcontext = SSLContext.getInstance("TLS");
+            sslcontext = SSLContext.getInstance("SSL");
             sslcontext.init(null, managers, null);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();

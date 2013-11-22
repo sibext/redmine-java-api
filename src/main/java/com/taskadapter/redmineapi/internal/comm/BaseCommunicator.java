@@ -4,13 +4,13 @@ import com.taskadapter.redmineapi.RedmineException;
 import com.taskadapter.redmineapi.RedmineFormatException;
 import com.taskadapter.redmineapi.RedmineOptions;
 import com.taskadapter.redmineapi.RedmineTransportException;
-import org.apache.http.*;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.conn.ClientConnectionManager;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.util.EntityUtils;
+import ch.boye.httpclientandroidlib.*;
+import ch.boye.httpclientandroidlib.client.ClientProtocolException;
+import ch.boye.httpclientandroidlib.client.HttpClient;
+import ch.boye.httpclientandroidlib.client.methods.HttpUriRequest;
+import ch.boye.httpclientandroidlib.conn.ClientConnectionManager;
+import ch.boye.httpclientandroidlib.impl.client.DefaultHttpClient;
+import ch.boye.httpclientandroidlib.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -66,7 +66,7 @@ public class BaseCommunicator implements Communicator<HttpResponse> {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * com.taskadapter.redmineapi.internal.comm.Communicator#sendRequest(org.apache.http
+	 * com.taskadapter.redmineapi.internal.comm.Communicator#sendRequest(ch.boye.httpclientandroidlib
 	 * .HttpRequest)
 	 */
 	@Override

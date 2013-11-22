@@ -4,8 +4,11 @@ import java.io.UnsupportedEncodingException;
 
 import com.taskadapter.redmineapi.internal.comm.Communicator;
 import com.taskadapter.redmineapi.internal.comm.ContentHandler;
-import org.apache.commons.codec.binary.Base64;
-import org.apache.http.HttpRequest;
+
+//import org.apache.commons.codec.binary.Base64;
+import ch.boye.httpclientandroidlib.HttpRequest;
+import ch.boye.httpclientandroidlib.androidextra.Base64;
+
 import com.taskadapter.redmineapi.RedmineException;
 import com.taskadapter.redmineapi.RedmineInternalError;
 
@@ -37,8 +40,8 @@ public class RedmineAuthenticator<K> implements Communicator<K> {
 		}
 		try {
 			authKey = "Basic "
-					+ Base64.encodeBase64String(
-							(login + ':' + password).getBytes(charset)).trim();
+					+ Base64.encodeToString(
+							(login + ':' + password).getBytes(charset), Base64.DEFAULT).trim();
 		} catch (UnsupportedEncodingException e) {
 			throw new RedmineInternalError(e);
 		}

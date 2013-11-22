@@ -1,7 +1,7 @@
 package com.taskadapter.redmineapi.internal.json;
 
-import org.json.JSONException;
-import org.json.JSONWriter;
+import com.sibext.json.JSONException;
+import com.sibext.json.JSONWriter;
 
 /**
  * Json object writer.

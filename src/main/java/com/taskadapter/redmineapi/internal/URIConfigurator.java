@@ -1,10 +1,10 @@
 package com.taskadapter.redmineapi.internal;
 
 import com.taskadapter.redmineapi.bean.*;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.utils.URIUtils;
-import org.apache.http.client.utils.URLEncodedUtils;
-import org.apache.http.message.BasicNameValuePair;
+import ch.boye.httpclientandroidlib.NameValuePair;
+import ch.boye.httpclientandroidlib.client.utils.URIUtils;
+import ch.boye.httpclientandroidlib.client.utils.URLEncodedUtils;
+import ch.boye.httpclientandroidlib.message.BasicNameValuePair;
 import com.taskadapter.redmineapi.RedmineInternalError;
 
 import java.net.MalformedURLException;
