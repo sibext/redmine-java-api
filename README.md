@@ -8,7 +8,8 @@
 * Supports GZipped responses from servers
 * Uses SLF4J for logging. Provide [your own SLF4J binding](http://www.slf4j.org/codes.html#StaticLoggerBinder)
 * [Supported Redmine versions] (https://github.com/taskadapter/redmine-java-api/wiki/Redmine-versions-compatibility)
-* Available in Maven Central.
+* Works on android platforms
+* Not available in Maven Central.
 
 Gradle dependency:
 
